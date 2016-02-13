@@ -10,6 +10,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # third party apps
+    'eav'
 )
 LOCAL_APPS = ('library',)
 INSTALLED_APPS += LOCAL_APPS

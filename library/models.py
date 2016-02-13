@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+import eav
 
 
 class Book(models.Model):
@@ -24,3 +25,7 @@ class Library(models.Model):
 
     class Meta:
         app_label = 'library'
+
+
+# register Book's model to eav to make it possible to add custom attributes
+eav.register(Book)
